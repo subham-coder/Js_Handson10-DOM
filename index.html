@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <style>
+        #parent {
+            height:150px;
+            width:400px;
+            display:flex;
+        }
+        .card {
+            height:100px;
+            width:100px;
+            background-color:red;
+            margin:10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Q1. Write the code to access element which is having id as "text" ?</h1>
+
+   <h2>Sol-</h2> <div id="text">Hi! Welcome to my page!!</div>
+    <button onclick="page()">Submit</button>
+
+    <h1>Q2. Write the code to access element which is having tag as "h1" ?</h1>
+
+    <h2>Sol-</h2><h1>Hi! My name is Subham. </h1>
+    <button onclick="callMe()">Submit </button>
+
+    <h1>Q3. Write the code to access element which is having class as "box" ?</h1>
+
+    <h2>Sol-</h2><div class="box">Welcome to prepbytes!!</div>
+    <button onclick="start()">Submit</button>
+
+    <h1>Q4."Hello" in h1 tag-<br>
+           Change the heading from ""Hello"" to ""Hello World"" using DOM functions ? </h1>
+
+    <h2>Sol-</h2><h1 id="world">Hello</h1>
+    <button onclick="hello()">Submit</button>
+    
+    <h1>Q5. Create an HTML page having content as Hello world and a button named Replace Text. When user will click on this button page content should be changed to "Welcome to Elevation academy"</h1>
+    
+    <h2>Sol-</h2><div id="helloText">Hello World</div>
+    <button onclick="replace()">Replace Text</button>
+
+    <h1>Q6-Hello in h1 tag-<br>
+
+    Add one style attribute and give text color as red and id attribute and give the id value as ""heading"" in the above given h1 tag using DOM functions"</h1>
+    <h2>Sol-</h2><h1 id="heading">Hello</h1>
+    <button onclick="change()">Change color</button>
+    
+    <h1>Q7.Create three cards on HTML page and arrange them using flex property in row or horizontal direction and also create button at the bottom named "Change Flex direction". When user clicks on this button, the cards arrangement should be changed to vertical direction. </h1>
+
+    <h2>Sol-</h2>
+    <div id="parent">
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+    </div>
+   <button id="submit">Change Flex direction</button>
+
+    <h1>Q8. What is the difference between window vs document?</h1>
+    
+    <h2>Sol- The difference between window vs document-</h2>
+    <table border="1" width="800px" align="center">
+        <tr>
+            
+            <th>Document</th>
+            <th>Windows</th>
+        </tr>
+        <tr>
+            <td>It represents the document loaded inside the window or browser.</td>
+            <td>It represents the browser window in which you are seeing the content.</td>
+        </tr>
+        <tr>
+            <td>The properties related to it are stored in the document object.</td>
+            <td>The properties related to it are stored in the window object.</td>
+        </tr>
+        <tr>
+            <td>It is loaded after the loading window because the window contains a document.</td>
+            <td>It is loaded before the document because of the window container document.</td>
+        </tr>
+        <tr>
+            <td>It is the root element of the document object model.</td>
+            <td>The window is the global element for all objects, functions, etc.</td>
+        </tr>
+        <tr>
+            <td>It is an object of the window.</td>
+            <td>It is an object of the browser.</td>
+        </tr>
+        <tr>
+            <td>We can not access windows objects properties inside the document.</td>
+            <td>We can access document object properties inside the window.</td>
+        </tr>
+        <tr>
+            <td>Example: document.title will return the title of the document.</td>
+            <td>Example: window.document.title will return the title of the document.</td>
+        </tr>
+        <tr>
+            <td>logically:
+                  document:{ properties}
+            </td>
+            <td>logically:
+                  window:{
+                    document:{properties}
+                  }
+            </td>
+        </tr>
+        <tr>
+            <td> > document.title<br>
+                 < 'Rect App'
+            </td>
+            <td> > window document.title<br>
+                 < 'React App'
+            </td>
+            
+        </tr>
+    </table>
+
+    <h1>Q9. Write code to implement timer clock using JS -- display HH:MM:SS -- the time should keep updating every second?</h1>
+
+    <h2>Sol-</h2>
+    <h3 id="time" ></h3>
+    <button onclick="dgclock()">Submit</button>
+    <h1>Q10. Guess the number game-</h1>
+    
+    <h2>Sol-</h2>
+    <a href="./game.html">Click to see the game</a>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
